@@ -101,9 +101,9 @@
   },
   {
    "fieldname": "origin_country",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Origin Country",
-   "options": "\nItaly\nGermany\nJapan"
+   "options": "Country"
   },
   {
    "fieldname": "description",
@@ -113,7 +113,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-19 10:56:37.322428",
+ "modified": "2024-11-19 18:33:58.620514",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Details",
