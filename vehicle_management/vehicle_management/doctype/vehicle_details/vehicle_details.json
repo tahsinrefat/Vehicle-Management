@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:chassis_number",
+ "creation": "2024-11-18 12:28:17.299523",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "car_model",
+  "model_year",
+  "auction_grade",
+  "color",
+  "cc",
+  "column_break_qfur",
+  "chassis_number",
+  "shape",
+  "package",
+  "milage",
+  "seat_capacity",
+  "section_break_etua",
+  "origin_country",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "car_model",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Car Model",
+   "options": "Car Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qfur",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chassis_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Chassis Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "model_year",
+   "fieldtype": "Link",
+   "label": "Model Year",
+   "options": "Model Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shape",
+   "fieldtype": "Select",
+   "label": "Shape",
+   "options": "Old\nNew",
+   "reqd": 1
+  },
+  {
+   "fieldname": "auction_grade",
+   "fieldtype": "Link",
+   "label": "Auction Grade",
+   "options": "Auction Grade"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "label": "Package",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Link",
+   "label": "Color",
+   "options": "Car Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cc",
+   "fieldtype": "Float",
+   "label": "CC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "milage",
+   "fieldtype": "Float",
+   "label": "Milage",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "seat_capacity",
+   "fieldtype": "Int",
+   "label": "Seat Capacity",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_etua",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "origin_country",
+   "fieldtype": "Select",
+   "label": "Origin Country",
+   "options": "\nItaly\nGermany\nJapan"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-19 10:56:37.322428",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Vehicle Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
