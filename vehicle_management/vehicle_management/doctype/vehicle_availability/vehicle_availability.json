@@ -60,7 +60,8 @@
    "fieldtype": "Link",
    "label": "Chassis Number",
    "options": "Vehicle Details",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "section_break_jtxy",
@@ -199,7 +200,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-19 12:40:40.036433",
+ "modified": "2024-11-20 12:42:53.295446",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Availability",

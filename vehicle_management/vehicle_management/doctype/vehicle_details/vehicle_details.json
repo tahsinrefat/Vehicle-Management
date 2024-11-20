@@ -19,7 +19,8 @@
   "seat_capacity",
   "section_break_etua",
   "origin_country",
-  "description"
+  "description",
+  "amended_from"
  ],
  "fields": [
   {
@@ -109,11 +110,22 @@
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-11-19 18:33:58.620514",
+ "modified": "2024-11-20 09:57:32.838005",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Details",
