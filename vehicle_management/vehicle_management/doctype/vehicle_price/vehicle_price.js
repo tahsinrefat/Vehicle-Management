@@ -25,6 +25,19 @@ frappe.ui.form.on("Vehicle Items", {
     },
     other_items_remove: function(frm) {
         calculate_grand_total(frm);
+    },
+    item: function(frm, cdt, cdn){
+        let current_row = locals[cdt][cdn];
+        let is_duplicate = check_duplicate_items(frm, current_row.item, cdn);
+
+        if (is_duplicate) {
+            frappe.msgprint({
+                title: __('Duplicate Item!'),
+                indicator: 'red',
+                message: __('The item {0} already exists in the table. Please select a different item!')
+            });
+            frappe.model.set_value(cdt, cdn, 'item', null);
+        }
     }
 })
 
@@ -60,4 +73,15 @@ function calculate_grand_total(frm) {
     let grand_total = company_price_op + customer_price_op + child_table_total;
 
     frm.set_value('grand_total', grand_total);
+}
+
+function check_duplicate_items(frm, item, current_row_cdn) {
+    let is_duplicate = false;
+
+    frm.doc.other_items.forEach(row => {
+        if (row.name !== current_row_cdn && row.item === item){
+            is_duplicate = true;
+        }
+    });
+    return is_duplicate;
 }
