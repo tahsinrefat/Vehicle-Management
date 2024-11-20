@@ -10,6 +10,7 @@
  ],
  "fields": [
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "year",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -20,7 +21,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-18 12:54:01.496278",
+ "modified": "2024-11-20 09:10:59.249039",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Model Year",
@@ -40,6 +41,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

@@ -10,6 +10,7 @@
  ],
  "fields": [
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location",
@@ -18,7 +19,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-19 11:20:28.677643",
+ "modified": "2024-11-20 09:09:24.963127",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Port Location",
@@ -38,6 +39,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
