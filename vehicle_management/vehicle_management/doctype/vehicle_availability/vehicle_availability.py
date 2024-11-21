@@ -4,7 +4,7 @@
 import frappe
 from frappe.model.document import Document
 
-
+#method for backend transfer
 class VehicleAvailability(Document):
 	@frappe.whitelist()
 	def prepare_vehicle_availability(chassis_number):
