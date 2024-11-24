@@ -22,3 +22,5 @@ class VehiclePrice(Document):
 			grand_total += item.amount
 
 		self.grand_total = grand_total
+		print(grand_total)
+		print(self.grand_total)

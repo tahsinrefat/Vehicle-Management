@@ -35,7 +35,7 @@ frappe.ui.form.on("Vehicle Items", {
             frappe.msgprint({
                 title: __('Duplicate Item!'),
                 indicator: 'red',
-                message: __('The item {0} already exists in the table. Please select a different item!')
+                message: __('{0} is already exists in the table. Please select a different item!', [current_row.item])
             });
             frappe.model.set_value(cdt, cdn, 'item', null);
         }
